@@ -1,0 +1,88 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+/* 버튼 영역 스타일 */
+.button-panel {
+    flex: 1;
+    text-align: center;
+    background: #ffffff;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    overflow-y: auto;
+}
+
+/* 문제와 정답 영역 스타일 */
+.question-panel {
+    flex: 1;
+    text-align: center;
+    background: #ffffff;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* 버튼 스타일 */
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #003f7f;
+}
+
+/* 선택된 버튼 스타일 */
+button.selected {
+    background-color: red;
+}
+
+/* 헤더 스타일 */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* 문제와 결과 텍스트 스타일 */
+.problem, .result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* 정답 입력 필드 스타일 */
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+/* 레이아웃 조정 */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .button-panel {
+        border-bottom: 1px solid #ccc;
+    }
+}
+
